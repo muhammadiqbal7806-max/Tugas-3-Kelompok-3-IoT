@@ -100,6 +100,3 @@ TinyML:
 4. Tunggu buffer penuh (5 data)  
 5. Sistem mulai prediksi otomatis  
 
----
-
-## 📁 Struktur Project
