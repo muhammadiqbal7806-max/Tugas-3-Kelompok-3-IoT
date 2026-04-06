@@ -1,4 +1,4 @@
-# Tugas-3-Kelompok-3-IoT
+
 # Predictive Plant Watering (TinyML - ESP32)
 
 ## Deskripsi
