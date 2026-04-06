@@ -1,14 +1,14 @@
 # Tugas-3-Kelompok-3-IoT
-# 🌱 Predictive Plant Watering (TinyML - ESP32)
+# Predictive Plant Watering (TinyML - ESP32)
 
-## 📌 Deskripsi
+## Deskripsi
 Proyek ini merupakan implementasi Edge AI / TinyML untuk memprediksi kondisi kekeringan tanah menggunakan data time-series dari sensor soil moisture dan suhu.
 
 Sistem menggunakan 5 data terakhir untuk memprediksi apakah tanah akan menjadi kering atau tetap aman, sehingga lebih cerdas dibandingkan metode threshold biasa (If-Else).
 
 ---
 
-## 🎯 Tujuan
+## Tujuan
 - Memprediksi kondisi tanah secara real-time
 - Menggunakan Machine Learning langsung di ESP32 (offline)
 - Mengimplementasikan Ring Buffer
@@ -16,14 +16,14 @@ Sistem menggunakan 5 data terakhir untuk memprediksi apakah tanah akan menjadi k
 
 ---
 
-## ⚙️ Hardware
+## Hardware
 - ESP32  
 - Sensor Soil Moisture (Analog)  
 - Sensor BMP280 (Suhu)  
 
 ---
 
-## 🧠 Machine Learning
+## Machine Learning
 Model menggunakan TensorFlow Lite (TinyML):
 
 - Input: 10 fitur (5 soil + 5 suhu)
@@ -42,7 +42,7 @@ Model menggunakan TensorFlow Lite (TinyML):
 
 ---
 
-## 🔁 Ring Buffer
+## Ring Buffer
 Digunakan untuk menyimpan 5 data terakhir:
 
 #define BUFFER_SIZE 5
@@ -54,7 +54,7 @@ Fungsi:
 
 ---
 
-## 🔌 Alur Sistem
+## Alur Sistem
 1. Sensor membaca soil & suhu  
 2. Data masuk ke buffer  
 3. Jika buffer penuh:
@@ -65,7 +65,7 @@ Fungsi:
 
 ---
 
-## 📡 Integrasi Blynk
+## Integrasi Blynk
 - V0 → Persentase kekeringan (%)
 - V1 → Status (KERING / AMAN)
 - V2 → Soil Moisture
@@ -73,7 +73,7 @@ Fungsi:
 
 ---
 
-## ⚖️ Perbandingan Metode
+## Perbandingan Metode
 
 If-Else:
 - Sederhana
@@ -86,14 +86,14 @@ TinyML:
 
 ---
 
-## 🧱 Arsitektur Model
+## Arsitektur Model
 - Input Layer (10 neuron)
 - Hidden Layer (Dense + ReLU)
 - Output Layer (Sigmoid)
 
 ---
 
-## 🚀 Cara Menjalankan
+## Cara Menjalankan
 1. Upload kode ke ESP32  
 2. Hubungkan ke WiFi & Blynk  
 3. Pastikan sensor aktif  
